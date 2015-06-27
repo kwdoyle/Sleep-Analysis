@@ -20,7 +20,7 @@ B1 <- coef(fit)[2]  # slope
 summary(fit)
 
 # plot % sleep quality vs number of steps
-plot(sleep[,8], sleep[,3], xlab="steps", ylab="% sleep quality",
+plot(steps, quality, xlab="steps", ylab="% sleep quality",
      main="Effect of activity on \n sleep quality ", pch=16)
 # add regression line
 abline(a=B0, b=B1)
